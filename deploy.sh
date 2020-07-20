@@ -8,6 +8,6 @@ docker push invicit/multi-client:$SHA
 docker push invicit/multi-server:$SHA
 docker push invicit/multi-worker:$SHA
 kubectl apply -f ./k8s
-kubectl set image deplotments/server-deployment server=invicit/multi-server:$SHA
-kubectl set image deplotments/client-deployment client=invicit/multi-client:$SHA
-kubectl set image deplotments/worker-deployment worker=invicit/multi-worker:$SHA
+kubectl set image deployments/server-deployment server=invicit/multi-server:$SHA
+kubectl set image deployments/client-deployment client=invicit/multi-client:$SHA
+kubectl set image deployments/worker-deployment worker=invicit/multi-worker:$SHA
